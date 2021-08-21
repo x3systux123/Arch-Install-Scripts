@@ -21,7 +21,7 @@ grub-install $hardrive;
 gtub-mkconfig -o /boot/grub/grub.cfg;
 clear;
 echo "now we create your user: ";
-read $user;
+read user;
 useradd -m -g users -s /bin/bash $user;
 passwd $user;
 gpasswd -a $user video;
