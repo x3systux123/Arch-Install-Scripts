@@ -43,6 +43,7 @@ pacman -Sy git;
 git clone https://github.com/x3systux123/Arch-Install-Scripts.git;
 cd Arch-Install-Scripts;
 mv arch-chroot-install.sh /mnt/;
+rm /mnt/etc/pacman.conf
+mv pacman.conf /mnt/etc/pacman.conf
 echo export PS1="[chroot] ${PS1}" > /mnt/root/.bashrc;
-echo alias setup='cd / && bash arch-chroot-install.sh' > /mnt/root/.bashrc;
 arch-chroot /mnt;
