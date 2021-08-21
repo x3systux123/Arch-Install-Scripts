@@ -46,4 +46,5 @@ mv arch-chroot-install.sh /mnt/;
 rm /mnt/etc/pacman.conf
 mv pacman.conf /mnt/etc/pacman.conf
 echo export PS1="[chroot] ${PS1}" > /mnt/root/.bashrc;
+pacman -Syyu;
 arch-chroot /mnt;
