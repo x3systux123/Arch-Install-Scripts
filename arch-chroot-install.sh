@@ -1,3 +1,4 @@
+pacman -Sy;
 echo "please select your hostname: ";
 read hostname;
 echo $hostname > /etc/hostname;
@@ -5,7 +6,7 @@ clear;
 echo LANG=de_DE.UTF-8 > /etc/locale.conf;
 echo en_US.UTF-8 UTF-8 > /etc/locale.gen;
 locale-gen;
-echo "please tipe your Timezone z.B Berlin,Amsterdam etc. : "
+echo "please type your Timezone z.B Berlin,Amsterdam etc. : "
 read timezone;
 ln -sf /usr/share/zoneinfo/Europe/$timezone /etc/localtime;
 clear;
