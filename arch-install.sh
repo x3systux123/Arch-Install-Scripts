@@ -17,7 +17,7 @@ echo;
 echo please select your swap partition;
 read swap;
 mkswap -L swap $swap;
-echo------------------------------------;
+echo;
 echo please select your root partition;
 read root;
 mkfs.ext4 -L root $root;
