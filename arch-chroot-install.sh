@@ -38,7 +38,8 @@ echo -n "Enter your Videodriver: "
 echo "1) nvidia"
 echo "2) amd"
 read videodriver
-if [ "$videodriver" = "nvidia" ] than
+if [ "$videodriver" = "nvidia" ] 
+then
     pacman -S nvidia nvidia-settings
 else
     pacman -S xf86-video-amdgpu
