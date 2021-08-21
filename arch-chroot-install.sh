@@ -9,10 +9,6 @@ echo "please tipe your Timezone z.B Berlin,Amsterdam etc. : "
 read timezone;
 ln -sf /usr/share/zoneinfo/Europe/$timezone /etc/localtime;
 clear;
-echo [multilib] > /etc/pacman.conf;
-echo SigLevel = PackageRequired TrustedOnly > /etc/pacman.conf;
-echo Include = /etc/pacman.d/mirrorlist > /etc/pacman.conf;
-clear;
 mkinitcpio -p linux;
 passwd;
 clear;
